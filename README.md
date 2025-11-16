@@ -26,6 +26,6 @@ Vollständiges Demo-Repo:
 - .github/workflows/ (CI)
 
 ## Grok Assets-Wunschliste (bereitgestellt)
-- Logo: assets/logo.svg + assets/logo-512.png
+- Logo: assets/logo.svg + assets/logo.svg
 - Farben: assets/colors.json
 - Font: Inter (Google Fonts)
