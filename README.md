@@ -26,6 +26,6 @@ Vollständiges Demo-Repo:
 - .github/workflows/ (CI)
 
 ## Grok Assets-Wunschliste (bereitgestellt)
-- Logo: assets/logo.svg + assets/logo.svg
+- Logo: https://cellrepair.ai/assets/LOGO%20CellRepair%20AI%20NETWORK.png + assets/logo.svg
 - Farben: assets/colors.json
 - Font: Inter (Google Fonts)
