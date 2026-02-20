@@ -1,69 +1,80 @@
-# CellRepair.ai — Grok AI Demo
+<div align="center">
 
-Complete demo repository:
+# ⚡ CellRepair.AI — Grok AI Demo
 
-- Setup in <60s (Docker Compose)
-- FastAPI (Backend) + Next.js (Frontend)
-- Guardrails (Confidence-Gate, Fallback, Abort)
-- CI Workflow
-- Assets (Logo, Colors, Font)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
+[![Next.js](https://img.shields.io/badge/Next.js-Frontend-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Grok](https://img.shields.io/badge/Grok-xAI-red?style=for-the-badge)](https://x.ai)
 
----
+**Complete demo repository: CellRepair.AI + Grok integration with guardrails.**
 
-## Quickstart
+[Website](https://cellrepair.ai) · [Demo Video](https://youtube.com) · [Live Demo](https://cellrepair.ai)
 
-1. `cp .env.example .env` (fill in your keys)
-2. `docker compose up -d`
-3. Web: http://localhost:3000 | API: http://localhost:8000
+</div>
 
 ---
 
-## Environment Variables
+## 🚀 Quick Start
 
-- `MODEL_ROUTING=quality_cost`
-- Hard-Limits + Session-Budget
-- Confidence-Gate <0.6 → Re-route
-- Stuck-Agent Abort + Trace-IDs
-- DEV/STAGE/PROD Profile
+```bash
+cp .env.example .env  # fill in your keys
+docker compose up -d
+```
+
+- **Web:** http://localhost:3000
+- **API:** http://localhost:8000
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| **Docker Compose** | Setup in <60s |
+| **FastAPI Backend** | High-performance API |
+| **Next.js Frontend** | Modern React UI |
+| **Guardrails** | Confidence-Gate, Fallback, Abort |
+| **CI Workflow** | GitHub Actions |
+| **Brand Assets** | Logo, Colors, Font |
+
+## ⚙️ Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `MODEL_ROUTING` | `quality_cost` routing strategy |
+| Hard-Limits | Session-Budget enforcement |
+| Confidence-Gate | <0.6 triggers re-route |
+| Stuck-Agent Abort | + Trace-IDs |
+| DEV/STAGE/PROD | Profile switching |
+
+## 🏗️ Project Structure
+
+```
+cellrepair-grok-demo/
+├── api/              # FastAPI backend
+├── web/              # Next.js frontend
+├── assets/           # Brand assets (logo, colors)
+├── .github/          # CI workflow
+├── docker-compose.yml
+└── .env.example
+```
+
+## 🔗 Related Projects
+
+| Project | Description |
+|---------|-------------|
+| [cellrepair-ai](https://github.com/PowerForYou74/cellrepair-ai) | Core AI framework |
+| [cellrepair-agentx-purple](https://github.com/PowerForYou74/cellrepair-agentx-purple) | AgentX Purple Agent (96.5% win rate) |
+| [cellrepair-langchain](https://github.com/PowerForYou74/cellrepair-langchain) | LangChain integration |
+| [cellrepair-mcp-server](https://github.com/PowerForYou74/cellrepair-mcp-server) | Claude MCP integration |
+
+## 📄 License
+
+MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
-## Structure
+<div align="center">
 
-- `api/` (FastAPI)
-- `web/` (Next.js)
-- `assets/` (Logo/Branding)
-- `.github/workflows/` (CI)
+Built by [Oliver Winkel](https://github.com/PowerForYou74) at [CellRepair AI](https://cellrepair.ai)
 
----
-
-## Grok Assets (Included)
-
-- Logo: [CellRepair AI Network Logo](https://cellrepair.ai/assets/LOGO%20CellRepair%20AI%20NETWORK.png) + `assets/logo.svg`
-- Colors: `assets/colors.json`
-- Font: Inter (Google Fonts)
-
----
-
-## What is CellRepair.ai?
-
-CellRepair.ai is a scalable multi-agent framework with real guardrails (Confidence-Gate <0.6 → Re-route, Hard-Limits, Abort/Trace-IDs). Goal: faster from idea to production – robust and cost-aware.
-
----
-
-## Get Started in 3 Minutes
-
-- **Without Docker:** Install Node 20 + Python 3.11, then `npm i && npm run dev` in `web/` and `uvicorn api.app:app` in `api/`.
-- **With Docker:** `docker compose up -d` → Web: `http://localhost:3000`, API: `http://localhost:8000`.
-
----
-
-## Guardrails – Explained
-
-- **Confidence-Gate:** Uncertain responses (<0.6) are automatically re-routed.
-- **Hard-Limits + Session-Budget:** Costs and usage clearly limited.
-- **Abort + Trace-IDs:** Clean debugging for "stuck" agents.
-
----
-
-**Built by [Oliver Winkel](https://github.com/PowerForYou74) at [CellRepair AI](https://cellrepair.ai)**
+</div>
